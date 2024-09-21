@@ -6,6 +6,12 @@ const initialStateCustomer = {
   createdAt: "",
 };
 
+const initialStateAccount = {
+  balance: 0,
+  loan: 0,
+  loanPurpose: "",
+};
+
 function accountReducer(state = initialStateAccount, action) {
   switch (action.type) {
     case "account/deposit":
