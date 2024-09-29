@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createCustomer } from "./customerSlice";
+import { create } from "./customerSlice";
 import { useDispatch } from "react-redux";
 
 function Customer() {
@@ -12,7 +12,7 @@ function Customer() {
     if (!fullName || !nationalId) {
       return;
     }
-    dispatch(createCustomer(fullName, nationalId));
+    dispatch(create(fullName, nationalId));
   }
 
   return (
